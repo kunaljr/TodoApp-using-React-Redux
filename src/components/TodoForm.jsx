@@ -11,7 +11,7 @@ const TodoForm = ({addTodo}) => {
 
     const [title,setTitle] = useState("");
 
-    const handleSubmit = () => {
+    const handleSubmit = (e) => {
         e.preventDefault();
         if(title ===''){
             return alert('Plese add a todo')
